@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+.body {
+  clear: both;
+}
+
+.inner1, .inner2, .inner3 {
+  float: right;
+  top: -2px;
+  right: -2px;
+  width: 5rem;
+  height: 2rem;
+  border: 2px solid #000000;
+  background-color: #F0FFFF;
+  position: relative;
+}
+.container1 , .container2,  .container3 {
+    height: 200px;
+    border: 2px solid #000000;
+    float: left;
+    text-align: center;
+    background-color: #8FBC8F;
+    overflow: hidden;
+    margin: 1%;
+  }
+  .headPanel {
+    text-align: center;
+    font-size: 26px;
+  }
+  .container1 {
+    /*margin-right: 5px;*/
+    /*padding-right: -5px;*/
+    box-sizing: border-box;
+  }
+  .innerText {
+    padding-top: 2rem;
+  }
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .container1 , .container2,  .container3 {
+    width: 31.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (max-width: 991px) {
+  .container1, .container2 {
+    width: 48%;
+  }
+  .container3 {
+    width: 99%;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .container1, .container2, .container3 {
+    width: 99%;
+  }  
+}
